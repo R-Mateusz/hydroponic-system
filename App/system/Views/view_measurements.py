@@ -1,9 +1,10 @@
-from rest_framework import viewsets
+from rest_framework.generics import CreateAPIView
 from ..Serializers.serializer_measurements import MeasurementSerializer
 from ..Models.measurements import Measurements
-from rest_framework import permissions
+from ..Models.hydroponic_system import HydroponicSystem
 
 
-class MeasurementViewSet(viewsets.ModelViewSet):
+class MeasurementCreateAPIView(CreateAPIView):
+    serializer_class = MeasurementSerializer
     queryset = Measurements.objects.all()
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
