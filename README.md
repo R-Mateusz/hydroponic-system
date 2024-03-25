@@ -1,7 +1,7 @@
 # hydroponic-system
 **DEV Manual:**
 
-Specified docker commands describe launching the app 
+Specified docker commands describe launching the app: 
 1. View containers list '_**docker ps**_'
 2. Enter specific container '_**docker exec -it [id] bash**_'
 3. Build container '_**docker-compose build [container_name]**_'
