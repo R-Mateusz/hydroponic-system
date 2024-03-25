@@ -17,7 +17,4 @@ class Measurements(models.Model):
         return str(self.measurement)
 
     class Meta:
-        """
-        inner Meta class for parent model
-        """
         verbose_name_plural = 'Measurement'

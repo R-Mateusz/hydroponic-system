@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class HydroponicSystem(models.Model):
     """
     Hydroponic system model that contains data from sensors
@@ -12,7 +11,4 @@ class HydroponicSystem(models.Model):
         return self.system_model
 
     class Meta:
-        """
-        inner Meta class for parent model
-        """
         verbose_name_plural = 'Hydroponic System'

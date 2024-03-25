@@ -16,9 +16,20 @@ class HydroponicSystemViewSet(viewsets.ModelViewSet):
     permission_classes = [Owner]
 
     def get_queryset(self):
+        """
+        Returns list of objects related to the user
+        :return: HydroponicSystem
+        """
         return HydroponicSystem.objects.filter(user=self.request.user)
 
     def retrieve(self, request, *args, **kwargs):
+        """
+        Returns measurements for hydroponic system model based on a filter
+        :param request: request
+        :param args: *args
+        :param kwargs: **kwargs
+        :return: Response(data)
+        """
         instance = self.get_object()
         serializer = self.get_serializer(instance)
         measurements = Measurements.objects.filter(system_hydroponic=instance).order_by('-id')[:10]

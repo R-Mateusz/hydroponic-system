@@ -7,8 +7,5 @@ class MeasurementSerializer(serializers.ModelSerializer):
     Serializer for Measurement model
     """
     class Meta:
-        """
-        class Meta for parent model
-        """
         fields = '__all__'
         model = Measurements

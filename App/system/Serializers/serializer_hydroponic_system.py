@@ -9,8 +9,5 @@ class HydroponicSystemSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:
-        """
-        class Meta for parent model
-        """
         fields = '__all__'
         model = HydroponicSystem
