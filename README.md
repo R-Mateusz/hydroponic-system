@@ -2,11 +2,11 @@
 **DEV Manual:**
 
 Specified docker commands describe launching the app: 
-* View containers list '_**docker ps**_'
-* Enter specific container '_**docker exec -it [id] bash**_'
-* Build container '_**docker-compose build [container_name]**_'
-* Run containers '_**docker-compose up**_'
-* Stop containers '_**docker-compose down**_'
+* _**docker ps**_ - View containers list 
+* _**docker exec -it [id] bash**_ - Enter specific container 
+* Build container _**docker-compose build [container_name]**_
+* _**docker-compose up**_ - Run containers 
+* _**docker-compose down**_ - Stop containers 
 
 Application urls:
 * **_localhost:8000/admin/_** - admin page
@@ -18,14 +18,14 @@ Application urls:
 
 Kubernetes:
 
-* **minikube dashboard** - Shows management dashboard of docker images 
-* **minikube start** - Starts a local Kubernetes cluster
-* **minikube stop** - Stop a local Kubernetes cluster
-* **minikube pause** - pause Kubernetes
-* **minikube unpause** - unpause Kubernetes
-* **minikube status** - check Kubernetes cluster status
-* **minikube image load {image}**- load docker image 
-* **kubectl apply -k .** - apply changes in a configuration to resource by file name
+* **_minikube dashboard_** - Shows management dashboard of docker images 
+* **_minikube start_** - Starts a local Kubernetes cluster
+* **_minikube stop_** - Stop a local Kubernetes cluster
+* **_minikube pause_** - pause Kubernetes
+* **_minikube unpause_** - unpause Kubernetes
+* **_minikube status_** - check Kubernetes cluster status
+* **_minikube image load {image}_**- load docker image 
+* **_kubectl apply -k ._** - apply changes in a configuration to resource by file name
 
 **NOTE:**
 
