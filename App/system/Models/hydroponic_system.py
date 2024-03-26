@@ -8,6 +8,10 @@ class HydroponicSystem(models.Model):
     user = models.ForeignKey('auth.User', related_name='hydroponic_systems', on_delete=models.CASCADE)
 
     def __str__(self):
+        """
+        Gets the name of the system object
+        :return: system_model
+        """
         return self.system_model
 
     class Meta:

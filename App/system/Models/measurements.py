@@ -14,6 +14,10 @@ class Measurements(models.Model):
     tds = models.DecimalField(decimal_places=1, max_digits=5, null=False, default=10.0)
 
     def __str__(self):
+        """
+        Gets the name of measurement object
+        :return: measurement
+        """
         return str(self.measurement)
 
     class Meta:
