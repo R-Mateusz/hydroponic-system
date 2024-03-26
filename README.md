@@ -4,7 +4,7 @@
 Specified docker commands describe launching the app: 
 * _**docker ps**_ - View containers list 
 * _**docker exec -it [id] bash**_ - Enter specific container 
-* Build container _**docker-compose build [container_name]**_
+* _**docker-compose build [container_name]**_ - Build container 
 * _**docker-compose up**_ - Run containers 
 * _**docker-compose down**_ - Stop containers 
 
