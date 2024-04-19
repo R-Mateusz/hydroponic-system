@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class HydroponicSystem(models.Model):
     """
     Hydroponic system model that contains data from sensors
@@ -10,9 +11,9 @@ class HydroponicSystem(models.Model):
     def __str__(self):
         """
         Gets the name of the system object
-        :return: system_model
+        :return: str
         """
-        return self.system_model
+        return f"{self.system_model}"
 
     class Meta:
         verbose_name_plural = 'Hydroponic System'

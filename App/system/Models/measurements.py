@@ -16,9 +16,9 @@ class Measurements(models.Model):
     def __str__(self):
         """
         Gets the name of measurement object
-        :return: measurement
+        :return: str
         """
-        return str(self.measurement)
+        return f"{str(self.measurement)}"
 
     class Meta:
         verbose_name_plural = 'Measurement'
